@@ -9,20 +9,25 @@
 public class Lane {
 	private Airplane airplane;
 	private String name;
+	private boolean isOccupied;//true = ocupada | false = livre
 
 	/**	
 	 * 
 	 */
 	public Lane() {
-		// TODO Auto-generated constructor stub
+		this.airplane = null;
+		this.name = "DEFAULT NAME";
+		this.isOccupied = true;
 	}
 	
 	/**
 	 * @see Inicializa uma pista
 	 * @param airplane Airplane - Avião à ser "setado" na pista
 	 */
-	public Lane(Airplane airplane){
+	public Lane(String name, Airplane airplane){
+		this.name = name;
 		this.airplane = airplane;
+		this.isOccupied = true;
 	}
 	
 	/**

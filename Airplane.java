@@ -8,11 +8,14 @@
  */
 public class Airplane {
 
-	/**
-	 * 
-	 */
-	public Airplane() {
-		// TODO Auto-generated constructor stub
+	private AirTrafficController airTrafficController;
+
+	public Airplane(AirTrafficController airTrafficController) {
+		this.airTrafficController = airTrafficController;
+	}
+
+	public void askRequestForLanding() {
+		this.airTrafficController.givePermissionToLand();
 	}
 
 }
