@@ -17,5 +17,4 @@ public class Airplane {
 	public void askRequestForLanding() {
 		this.airTrafficController.givePermissionToLand();
 	}
-
 }
