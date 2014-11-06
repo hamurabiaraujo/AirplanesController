@@ -1,3 +1,4 @@
+package src;
 import java.util.List;
 import java.util.ArrayList;
 /**
@@ -21,7 +22,7 @@ public class AirTrafficController {
 		}
 	}
 
-	public Lane givePermissionToLand() {
+	public Lane givePermissionToUseALane() {
 		List<Lane> lanes = this.airport.getLanes();
 		Lane freeLane = null;
 		for (Lane lane : lanes) {
@@ -31,5 +32,9 @@ public class AirTrafficController {
 			}
 		}
 		return freeLane;
+	}
+	
+	public void land(Airplane airplane){
+		if(airplane.)
 	}
 }
