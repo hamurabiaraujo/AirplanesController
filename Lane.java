@@ -59,5 +59,9 @@ public class Lane {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public boolean isOccupied() {
+		return this.isOccupied;
+	}
 	
 }

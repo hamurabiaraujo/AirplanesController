@@ -19,7 +19,6 @@ public class Airport {
 	 */
 	public Airport(String name, int qtdOfLanes) {
 		this.name = name;
-		this.qttOfLanes = qttOfLanes;
 		lanes = new ArrayList<Lane>();
 		for (int i=0;i<qtdOfLanes;i++) {
 			lanes.add(new Lane());

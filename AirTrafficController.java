@@ -24,7 +24,7 @@ public class AirTrafficController {
 	public Lane givePermissionToLand() {
 		List<Lane> lanes = this.airport.getLanes();
 		Lane freeLane = null;
-		for (lanes : lane) {
+		for (Lane lane : lanes) {
 			if (!lane.isOccupied()) {
 				freeLane = lane;
 				break;
